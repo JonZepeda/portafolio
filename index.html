@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="description" content="Portafolio de Jonathan Zepeda, estudiante de Ingeniería en Sistemas y futuro desarrollador web.">
+	<meta name="author" content="Jonathan Zepeda">
+	<title>Jonathan Zepeda | Portafolio</title>
+	<link rel="icon" href="img/Icono.jpg" type="image/x-icon">
+	
+	<!-- CSS -->
+	<link rel="stylesheet" href="css/main.css">
+	
+	<!-- Fuente -->
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header class="header" role="banner">
+	<nav class="navbar" role="navigation" aria-label="Menú principal">
+		<h1 class="logo">Jonathan<span> Zepeda</span></h1>
+		<ul class="nav-links">
+			<li><a href="#inicio">Inicio</a></li>
+			<li><a href="#sobre-mi">Sobre mí</a></li>
+			<li><a href="#habilidades">Habilidades</a></li>
+			<li><a href="#proyectos">Proyectos</a></li>
+			<li><a href="#contacto">Contacto</a></li>
+		</ul>
+		<div class="menu-toggle" id="menu-toggle">☰</div>
+	</nav>
+</header>
+
+<main id="contenido-principal" role="main">
+	<!-- ====== INICIO ====== -->
+	<section id="inicio" class="inicio">
+		<div class="contenido-inicio">
+			<h2>Hola, soy <span>Jonathan Zepeda</span></h2>
+			<p>Estudiante de Ingeniería en Sistemas y futuro desarrollador web Full Stack.</p>
+			<a href="#proyectos" class="btn">Ver mis proyectos</a>
+		</div>
+	</section>
+	
+	<!-- ====== SOBRE MÍ ====== -->
+	<section id="sobre-mi" class="sobre-mi fade-section">
+		<h2>Sobre Mí</h2>
+		<div class="sobre-mi-contenido">
+			<img src="img/JonathanZepeda.jpg" alt="Foto de Jonathan Zepeda">
+			<div>
+				<p>
+					Me apasiona el desarrollo web y la creación de aplicaciones que faciliten la vida de las personas.
+					Me encuentro aprendiendo tecnologías como <strong>HTML, CSS, JavaScript, React y .NET</strong> para convertirme en desarrollador Full Stack.
+				</p>
+				<p>
+					Me considero una persona autodidacta, responsable y con muchas ganas de seguir aprendiendo cada día.
+				</p>
+			</div>
+		</div>
+	</section>
+	
+	<!-- ====== HABILIDADES ====== -->
+	<section id="habilidades" class="habilidades fade-section">
+		<h2>Mis Habilidades</h2>
+		<div class="grid-habilidades">
+			<div class="habilidad">HTML5</div>
+			<div class="habilidad">CSS3</div>
+			<div class="habilidad">JavaScript</div>
+			<div class="habilidad">React</div>
+			<div class="habilidad">Node.js</div>
+			<div class="habilidad">.NET</div>
+		</div>
+	</section>
+	
+	<!-- ====== PROYECTOS ====== -->
+	<section id="proyectos" class="proyectos fade-section">
+		<h2>Mis Proyectos</h2>
+		<div class="grid-proyectos">
+			<article class="proyecto">
+				<img src="img/calculadora.png" alt="Proyecto Calculadora">
+				<div class="overlay">
+					<h3>Calculadora</h3>
+					<p>Desarrollada con React y Node.js</p>
+				</div>
+			</article>
+			<article class="proyecto">
+				<img src="img/api.png" alt="Proyecto API REST">
+				<div class="overlay">
+					<h3>API RESTful .NET 8</h3>
+					<p>Backend conectado a MySQL</p>
+				</div>
+			</article>
+			<article class="proyecto">
+				<img src="img/maletin.png" alt="Proyecto Portafolio">
+				<div class="overlay">
+					<h3>Portafolio Personal</h3>
+					<p>HTML, CSS y JavaScript</p>
+				</div>
+			</article>
+		</div>
+	</section>
+	
+	<!-- ====== CONTACTO ====== -->
+	<section id="contacto" class="contacto fade-section">
+		<h2>Contáctame</h2>
+		<p>¿Quieres hablar sobre un proyecto o colaboración? ¡Escríbeme!</p>
+		
+		<form action="https://formspree.io/f/xldpzzrq" method="POST" id="formulario-contacto" class="form-contacto">
+			<div class="form-grupo">
+				<label for="nombre">Nombre</label>
+				<input type="text" id="nombre" name="nombre" placeholder="Tu nombre completo" required>
+			</div>
+			<div class="form-grupo">
+				<label for="email">Correo Electrónico</label>
+				<input type="email" id="email" name="email" placeholder="tuemail@gmail.com" required>
+			</div>
+			<div class="form-grupo">
+				<label for="mensaje">Mensaje</label>
+				<textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje..." required></textarea>
+			</div>
+			<button type="submit" class="enviar-btn" >Enviar mensaje</button>
+			<p id="mensaje-exito" class="mensaje-exito" style="display:none;">¡Gracias! Tu mensaje fue enviado correctamente.</p>
+		</form>
+	</section>
+</main>
+
+
+<footer class="footer" role="contentinfo">
+	<p>&copy; 2025 Jonathan Zepeda. Todos los derechos reservados.</p>
+</footer>
+
+<!-- ====== BOTÓN VOLVER ARRIBA ====== -->
+<button id="btn-top" class="btn-top" title="Volver arriba">↑</button>
+
+<!-- JS -->
+<script src="js/form.js" defer></script>
+<script src="js/main.js" defer></script>
+</body>
+</html>

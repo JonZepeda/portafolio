@@ -1,0 +1,207 @@
+/* ==== NAVBAR ==== */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--color-texto);
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: var(--color-principal);
+}
+
+/* ==== SECCIÓN INICIO ==== */
+.inicio {
+    background: linear-gradient(135deg, var(--color-principal), #00bcd4);
+    color: #fff;
+    padding: 6rem 2rem;
+    text-align: center;
+}
+
+.inicio h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.inicio span {
+    color: var(--color-principal);
+}
+
+/* ==== SOBRE MÍ ==== */
+.sobre-mi {
+    padding: 4rem 2rem;
+    background-color: var(--color-gris-suave);
+}
+
+.sobre-mi h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+.sobre-mi-contenido {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.sobre-mi img {
+    width: 250px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+}
+
+/* ==== HABILIDADES ==== */
+.habilidades {
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.grid-habilidades {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 1rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.habilidad {
+    background: var(--color-principal);
+    color: #fff;
+    padding: 1rem;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+/* ==== PROYECTOS ==== */
+.proyectos {
+    padding: 4rem 2rem;
+    background-color: #fafafa;
+    text-align: center;
+}
+
+.grid-proyectos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+}
+
+.proyecto {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: var(--sombra);
+    transition: transform 0.3s ease;
+}
+
+.proyecto:hover {
+    transform: scale(1.03);
+}
+
+.proyecto img {
+    width: 45%;
+    display: block;
+    margin: 0 auto;
+    border-radius: 15px;
+}
+
+.overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.3s ease;
+}
+
+.proyecto:hover .overlay {
+    opacity: 1;
+}
+/* ==== FORMULARIO DE CONTACTO ==== */
+.contacto {
+    padding: 4rem 2rem;
+    background-color: var(--color-gris-suave);
+    text-align: center;
+}
+
+.form-contacto {
+    max-width: 600px;
+    margin: 0 auto;
+    background: var(--color-fondo);
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: var(--sombra);
+    text-align: left;
+}
+
+.form-grupo {
+    margin-bottom: 1.5rem;
+}
+
+.form-grupo label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: var(--color-texto);
+}
+
+.form-grupo input,
+.form-grupo textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+    transition: border-color 0.3s ease;
+}
+
+.form-grupo input:focus,
+.form-grupo textarea:focus {
+    border-color: var(--color-principal);
+    outline: none;
+}
+
+.enviar-btn {
+    background: var(--color-principal);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    padding: 0.8rem;
+    font-size: 1rem;
+    border-radius: 8px;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.enviar-btn:hover {
+    background: #005fcc;
+    transform: translateY(-2px);
+}
+
+.mensaje-exito {
+    margin-top: 1rem;
+    color: green;
+    font-weight: 600;
+}
